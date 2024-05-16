@@ -115,6 +115,7 @@
     window.speechSynthesis.speak(text_speak);
 }
 function wishMe() {
+    speak("Initializing JARVIS...");
     var day = new Date();
     var hour = day.getHours();
 
@@ -128,7 +129,6 @@ function wishMe() {
 }
 
 window.addEventListener('load', () => {
-    speak("Initializing JARVIS...");
     wishMe();
 });
 
